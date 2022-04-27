@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a1=prompt("nhập chuỗi 1")
+    let a2=prompt("nhập chuỗi 2")
+    let str1=a1.split("")
+    let str2=a2.split("")
+    console.log(str1)
+    console.log(str2)
+    function ktra(){
+        let b=''
+        let count=0
+        let check=false
+        for (let i = 0; i <str2.length ; i++) {
+            if (str1[0]===str2[i]) {
+                for (let j= 0; j < str1.length ; j++) {
+                if (str1[j]===str2[j+b]) {
+                    count++;
+                }
+                if (count===str1.length) {check=true;
+                        break;}
+                }
+        }
+    }
+        console.log(check)
+    }
+    ktra()
+</script>
